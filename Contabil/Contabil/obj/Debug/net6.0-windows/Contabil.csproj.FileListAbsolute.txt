@@ -64,3 +64,6 @@ C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj
 C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\Contabil.pdb
 C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\Contabil.genruntimeconfig.cache
 C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\ref\Contabil.dll
+C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\Contabil.CustoLucroForm.resources
+C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\Contabil.VendaForm.resources
+C:\Users\leopp\OneDrive\Área de Trabalho\UFN\6º semestre\Contabil\Contabil\obj\Debug\net6.0-windows\Contabil.DadosForm.resources

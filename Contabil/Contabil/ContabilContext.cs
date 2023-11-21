@@ -16,6 +16,7 @@ public partial class Contexto : DbContext
     }
 
     public virtual DbSet<Produto> Produtos { get; set; }
+    public virtual DbSet<Empresa> Empresa { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -58,6 +59,36 @@ public partial class Contexto : DbContext
             entity.Property(e => e.Venda)
                 .HasColumnType("money")
                 .HasColumnName("venda");
+        });
+
+        modelBuilder.Entity<Empresa>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__empresa__3213E83FFE3A961B"); ;
+
+            entity.ToTable("empresa");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Capital)
+                .HasColumnType("money")
+                .HasColumnName("capital");
+            entity.Property(e => e.Caixa)
+                .HasColumnType("money")
+                .HasColumnName("caixa");
+            entity.Property(e => e.Custo)
+                .HasColumnType("money")
+                .HasColumnName("custo");
+            entity.Property(e => e.Despesa)
+                .HasColumnType("money")
+                .HasColumnName("despesa");
+            entity.Property(e => e.Obrigacoes)
+                .HasColumnType("money")
+                .HasColumnName("obrigacoes");
+            entity.Property(e => e.Bens)
+                .HasColumnType("money")
+                .HasColumnName("bens");
+            entity.Property(e => e.Direitos)
+                .HasColumnType("money")
+                .HasColumnName("direitos");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -55,8 +55,14 @@
             btnDeletar = new Button();
             btnEditar = new Button();
             btnCadastrar = new Button();
+            menuStrip1 = new MenuStrip();
+            menuDeOpçõesToolStripMenuItem = new ToolStripMenuItem();
+            consultarCustoToolStripMenuItem = new ToolStripMenuItem();
+            venderToolStripMenuItem = new ToolStripMenuItem();
+            dREToolStripMenuItem1 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dgvProdutos).BeginInit();
             pnlDados.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // label4
@@ -338,6 +344,44 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuDeOpçõesToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(846, 28);
+            menuStrip1.TabIndex = 55;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menuDeOpçõesToolStripMenuItem
+            // 
+            menuDeOpçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { consultarCustoToolStripMenuItem, venderToolStripMenuItem, dREToolStripMenuItem1 });
+            menuDeOpçõesToolStripMenuItem.Name = "menuDeOpçõesToolStripMenuItem";
+            menuDeOpçõesToolStripMenuItem.Size = new Size(135, 24);
+            menuDeOpçõesToolStripMenuItem.Text = "Menu de Opções";
+            // 
+            // consultarCustoToolStripMenuItem
+            // 
+            consultarCustoToolStripMenuItem.Name = "consultarCustoToolStripMenuItem";
+            consultarCustoToolStripMenuItem.Size = new Size(232, 26);
+            consultarCustoToolStripMenuItem.Text = "Consultar custo/lucro";
+            consultarCustoToolStripMenuItem.Click += consultarCustoToolStripMenuItem_Click;
+            // 
+            // venderToolStripMenuItem
+            // 
+            venderToolStripMenuItem.Name = "venderToolStripMenuItem";
+            venderToolStripMenuItem.Size = new Size(232, 26);
+            venderToolStripMenuItem.Text = "Vender produto";
+            venderToolStripMenuItem.Click += venderToolStripMenuItem_Click;
+            // 
+            // dREToolStripMenuItem1
+            // 
+            dREToolStripMenuItem1.Name = "dREToolStripMenuItem1";
+            dREToolStripMenuItem1.Size = new Size(232, 26);
+            dREToolStripMenuItem1.Text = "DRE";
+            dREToolStripMenuItem1.Click += dREToolStripMenuItem1_Click;
+            // 
             // ProdutoForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -349,11 +393,15 @@
             Controls.Add(btnDeletar);
             Controls.Add(btnEditar);
             Controls.Add(btnCadastrar);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "ProdutoForm";
             Text = "ProdutoForm";
             ((System.ComponentModel.ISupportInitialize)dgvProdutos).EndInit();
             pnlDados.ResumeLayout(false);
             pnlDados.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -387,5 +435,10 @@
         private Button btnDeletar;
         private Button btnEditar;
         private Button btnCadastrar;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menuDeOpçõesToolStripMenuItem;
+        private ToolStripMenuItem consultarCustoToolStripMenuItem;
+        private ToolStripMenuItem venderToolStripMenuItem;
+        private ToolStripMenuItem dREToolStripMenuItem1;
     }
 }

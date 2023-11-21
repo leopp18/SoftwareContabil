@@ -53,10 +53,10 @@ namespace Contabil
             float valorCompra = float.Parse(dgvProdutos.CurrentRow.Cells[2].Value.ToString());
             float valorVenda = float.Parse(dgvProdutos.CurrentRow.Cells[3].Value.ToString());
             float icmsCompra = float.Parse(dgvProdutos.CurrentRow.Cells[4].Value.ToString());
-            float icmsVenda = float.Parse(dgvProdutos.CurrentRow.Cells[5].Value.ToString());
-            float pisCompra = float.Parse(dgvProdutos.CurrentRow.Cells[6].Value.ToString());
-            float pisVenda = float.Parse(dgvProdutos.CurrentRow.Cells[7].Value.ToString());
-            float cofinsCompra = float.Parse(dgvProdutos.CurrentRow.Cells[8].Value.ToString());
+            float pisCompra = float.Parse(dgvProdutos.CurrentRow.Cells[5].Value.ToString());
+            float cofinsCompra = float.Parse(dgvProdutos.CurrentRow.Cells[6].Value.ToString());
+            float icmsVenda = float.Parse(dgvProdutos.CurrentRow.Cells[7].Value.ToString());
+            float pisVenda = float.Parse(dgvProdutos.CurrentRow.Cells[8].Value.ToString());
             float cofinsVenda = float.Parse(dgvProdutos.CurrentRow.Cells[9].Value.ToString());
 
             txtId.Text = id.ToString();
@@ -154,6 +154,27 @@ namespace Contabil
             }
             else { }
             atualizarView();
+        }
+
+        private void consultarCustoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustoLucroForm clf = new CustoLucroForm();
+            this.Close();
+            clf.Show();
+        }
+
+        private void venderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VendaForm vf = new VendaForm();
+            this.Close();
+            vf.Show();
+        }
+
+        private void dREToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DadosForm df = new DadosForm();
+            this.Close();
+            df.Show();
         }
     }
 }
